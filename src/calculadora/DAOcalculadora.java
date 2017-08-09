@@ -10,5 +10,25 @@ package calculadora;
  * @author sena
  */
 public class DAOcalculadora {
+ Conexion con=new Conexion();
+ Helper sql=new Helper(); 
+ private double resultado = 0;
+ public void insertnumer(double resultado ){
+     
+     con.search(sql.search(), resultado);
+ }
     
+ public void setresultado(double resultado1)
+ {
+ this.resultado=resultado1;
+ }
+ public double getresultado(){return this.resultado;}
+    
+    
+    
+  
+    
+    
+    
+
 }
